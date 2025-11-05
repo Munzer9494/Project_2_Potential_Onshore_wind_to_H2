@@ -1,0 +1,50 @@
+name: wind2h2
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.11
+  - pip
+  - ipykernel
+  - jupyterlab
+  - notebook
+
+  # Numerical & Data handling
+  - numpy
+  - pandas
+  - scipy
+  - tqdm
+
+  # Geospatial stack
+  - geopandas
+  - shapely
+  - rasterio
+  - rioxarray
+  - xarray
+  - pyproj
+  - rtree
+  - fiona
+  - gdal
+
+  # Plotting & visualization
+  - matplotlib
+  - seaborn
+
+  # Optimization / modeling
+  - pyomo
+  - glpk  # open-source linear solver
+  # optionally uncomment if needed:
+  # - ipopt
+
+  # Testing & utilities
+  - pytest
+  - click
+  - pyyaml
+
+  # Install any pip-only packages here
+  - pip:
+      - hydra-core
+      - dvc  # for data versioning (optional)
+      - black  # code formatting (optional)
