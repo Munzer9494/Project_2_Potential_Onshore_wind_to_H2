@@ -68,13 +68,14 @@ Open the notebooks listed below.
 | Notebook                             | Purpose                                                           |
 | ------------------------------------ | ----------------------------------------------------------------- |
 | `resource_assessment_1.ipynb`        | Build suitability layers (power density, slope, land cover).      |
+| `RSTM_PA_notebook.ipynb`             | Preparing & Raster‑to‑mask processing (Digital Elevation Model + protected areas).                      |
 | `WP_Protected_Areas.ipynb`           | Apply protected areas exclusions (WDPA).                          |
-| `pipelines_supply_demand_view.ipynb` | Explore hydrogen pipeline supply–demand overlays.                 |
+| `RA_Test2.ipynb`                     | Resource assessment 2 - Elevation & Slope Processing .                                              |
 | `wind_variability2.ipynb`            | Analyze wind variability impacts & building the stochastic H2 model.                                 |
 | `project_2_LCoH.ipynb`               | Compute levelized cost of hydrogen.                               |
+| `pipelines_supply_demand_view.ipynb` | Explore hydrogen pipeline supply–demand overlays.                 |
 | `scanario_analysis.ipynb`            | Scenario/Monte Carlo experiments (typo in name retained for now). |
-| `RSTM_PA_notebook.ipynb`             | Raster‑to‑mask processing (protected areas).                      |
-| `RA_Test2.ipynb`                     | Resource assessment 2 - Elevation & Slope Processing .                                              |
+
 
 
 
