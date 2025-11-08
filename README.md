@@ -67,11 +67,11 @@ Open the notebooks listed below.
 
 | Notebook                             | Purpose                                                           |
 | ------------------------------------ | ----------------------------------------------------------------- |
-| `resource_assessment_1.ipynb`        | Build suitability layers (power density & land cover).      |
-| `RSTM_PA_notebook.ipynb`             | Preparing & Raster‑to‑mask processing (Digital Elevation Model + protected areas).                      |
-| `WP_Protected_Areas.ipynb`           | Apply protected areas exclusions (WDPA).                          |
-| `resource_assessment_2.ipynb`        | Resource assessment 2 - including Elevation & Slope Processing .                                              |
-| `wind_variability2.ipynb`            | Analyze wind variability impacts & building the stochastic H2 model.                                 |
+| `resource_assessment_1.ipynb`        | Build suitability layers (Here you process the power density & land cover layers and calculate the first theretical potentials).      |
+| `RSTM_PA_notebook.ipynb`             | Preparing & Raster‑to‑mask processing (Here you process the Digital Elevation Model + protected areas layers).                      |
+| `WP_Protected_Areas.ipynb`           | Apply protected areas exclusions (Masking out/ excluding the protected areas - based on WDPA).                          |
+| `resource_assessment_2.ipynb`        | Resource assessment 2 - including Elevation & Slope Processing (Here you integrate the elevation and slope masks and calculate the potentials afterwards) .                                              |
+| `wind_variability2.ipynb`            | Analyze wind variability impacts & building the stochastic H2 model (Here you start analysing the wind speed data, making assumptions on the distributions of WTG spacing, availabilities & efficiencies for the Monte Carlo simulation).                                 |
 | `project_2_LCoH.ipynb`               | Compute levelized cost of hydrogen.                               |
 | `pipelines_supply_demand_view.ipynb` | Explore hydrogen pipeline supply–demand overlays.                 |
 | `scanario_analysis.ipynb`            | Scenario/Monte Carlo experiments (typo in name retained for now). |
