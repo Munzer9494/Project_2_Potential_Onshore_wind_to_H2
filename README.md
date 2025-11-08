@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository estimates spatially resolved onshore wind suitability and derives hydrogen supply potential and costs. It combines raster/vector GIS processing with engineering and other optimization models.
+This repository estimates spatially resolved onshore wind suitability and derives hydrogen supply potential and costs. It combines raster/vector GIS processing with engineering and other stochastic & optimization models.
 
 **Core steps**
 
@@ -14,7 +14,8 @@ This repository estimates spatially resolved onshore wind suitability and derive
 2. **Constraints**: apply protected areas and other exclusion rules to derive feasible wind tiles.
 3. **Wind‑to‑H₂ conversion**: map feasible wind output to electrolyzer production and compute LCOH.
 4. **Uncertainty**: optional Monte Carlo runs on key parameters (capacity factor (weather variability), wind turbines spacing, electrolyzer efficiency, etc.).
-5. ** Linear Programing (LP) & system sizing**: CAPEX & OPEX assumptions, stochastic wind speeds, electrolyser availabilty & the WTG power curves to calculate LCoH distribution based on optimal sizing
+5. **Linear Programing (LP) & system sizing**: CAPEX & OPEX assumptions, stochastic wind speeds, electrolyser availabilty & the WTG power curves to calculate LCoH distribution based on optimal sizing & creatign a H2 supply curve
+6. **H2 Grid analysis**: Evaluates the adequacy of the projected regional hydrogen network and its alignment with the estimated potentials as well as supply and demand locations 
 
 
 ---
@@ -67,14 +68,14 @@ Open the notebooks listed below.
 
 | Notebook                             | Purpose                                                           |
 | ------------------------------------ | ----------------------------------------------------------------- |
-| `resource_assessment_1.ipynb`        | Build suitability layers (Here you process the power density & land cover layers and calculate the first theretical potentials).      |
-| `RSTM_PA_notebook.ipynb`             | Preparing & Raster‑to‑mask processing (Here you process the Digital Elevation Model + protected areas layers).                      |
+| `resource_assessment_1.ipynb`        | Build suitability layers (Here we process the power density & land cover layers and calculate the first theretical potentials).      |
+| `RSTM_PA_notebook.ipynb`             | Preparing & Raster‑to‑mask processing (Here we process the Digital Elevation Model + protected areas layers).                      |
 | `WP_Protected_Areas.ipynb`           | Apply protected areas exclusions (Masking out/ excluding the protected areas - based on WDPA).                          |
-| `resource_assessment_2.ipynb`        | Resource assessment 2 - including Elevation & Slope Processing (Here you integrate the elevation and slope masks and calculate the potentials afterwards) .                                              |
-| `wind_variability2.ipynb`            | Analyze wind variability impacts & building the stochastic H2 model (Here you start analysing the wind speed data, making assumptions on the distributions of WTG spacing, availabilities & efficiencies for the Monte Carlo simulation).                                 |
-| `project_2_LCoH.ipynb`               | Compute levelized cost of hydrogen.                               |
-| `pipelines_supply_demand_view.ipynb` | Explore hydrogen pipeline supply–demand overlays.                 |
-| `scanario_analysis.ipynb`            | Scenario/Monte Carlo experiments (typo in name retained for now). |
+| `resource_assessment_2.ipynb`        | Resource assessment 2 - including Elevation & Slope Processing (Here we integrate the elevation and slope masks and calculate the potentials afterwards) .                                              |
+| `wind_variability2.ipynb`            | Analyze wind variability impacts & building the stochastic H2 model (Here we start analysing the wind speed data, making assumptions on the distributions of WTG spacing, availabilities & efficiencies for the Monte Carlo simulation).                                 |
+| `project_2_LCoH.ipynb`               | Compute levelized cost of hydrogen & the building H2 supply curve (Here we set up the LP for optimal wind/electrolyser sizing to minimize the LCoH. Then we build the H2 supply curve from the stochastic LCoH & the stochastic H2 supply volumes).                               |
+| `pipelines_supply_demand_view.ipynb` | Explore hydrogen pipeline supply–demand overlays (Here we investigate the H2 grid layout, the H2 demand and supply locations and estimate the regional flow capcity for adequacy)                 |
+| `scanario_analysis.ipynb`            | Scenario/Monte Carlo experiments (Here is the analysis of the adequacy of H2 potentials to meet the demand scenarios). |
 
 
 
